@@ -1,0 +1,14 @@
+.questions {
+  background: url("../img/questions/bg-for-questions.png") no-repeat 50% 0%;
+  background-size: cover;
+  padding: 50px 0 55px; }
+  .questions h2 {
+    color: #ffffff;
+    font-family: 'PFDinDisplayPro-ExtraThin', sans-serif;
+    font-size: 36px;
+    font-weight: 400; }
+    .questions h2 span {
+      font-weight: 100;
+      font-family: 'PFDinDisplayPro-Thin', sans-serif; }
+
+/*# sourceMappingURL=questions.css.map */

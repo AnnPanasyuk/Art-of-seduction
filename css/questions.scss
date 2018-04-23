@@ -1,0 +1,79 @@
+.questions {
+  background: url("../img/questions/bg-for-questions.png") no-repeat 50% 0%;
+  -webkit-background-size: cover;
+  background-size: cover;
+  padding: 50px 0 55px;
+  h2 {
+    text-align: center;
+    margin: 0 0 10px;
+    color: #ffffff;
+    font-family: 'PFDinDisplayPro-ExtraThin', sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    @media (min-width: 320px) and (max-width: 480px) {
+      font-size: 28px;
+    }
+    span {
+      font-weight: 100;
+      font-family: 'PFDinDisplayPro-Thin', sans-serif;
+    }
+  }
+  .description {
+    color: #ffffff;
+    font-family: 'PFDinDisplayPro-Regular', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    margin: 0 0 30px;
+    @media (min-width: 320px) and (max-width: 480px) {
+      font-size: 14px;
+    }
+  }
+  .flex-ct {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  figure {
+    padding: 0 4%;
+    width: 17%;
+    margin: 0 0 40px;
+    @media (min-width: 320px) and (max-width: 768px) {
+      width: 25%;
+    }
+    @media (min-width: 320px) and (max-width: 568px) {
+      width: 40%;
+    }
+    @media (min-width: 320px) and (max-width: 480px) {
+      width: 85%;
+    }
+    .img-ct {
+      height: 60px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      margin: 0 0 30px;
+      img {
+        display: block;
+        margin: auto;
+      }
+    }
+    p {
+      color: #ffffff;
+      text-align: center;
+      font-family: 'SegoeUI-Light', sans-serif;
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 25px;
+    }
+  }
+}

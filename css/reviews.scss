@@ -1,0 +1,226 @@
+.reviews {
+  padding: 80px 0 125px;
+  @media (min-width: 320px) and (max-width: 480px) {
+    padding: 50px 0;
+  }
+  h2 {
+    text-align: center;
+    color: #1c0815;
+    font-size: 36px;
+    font-weight: 300;
+    font-family: 'PFDinDisplayPro-Thin', sans-serif;
+    span {
+      font-weight: 400;
+      font-family: 'PFDinDisplayPro-Regular', sans-serif;
+    }
+  }
+  .heart {
+    display: block;
+    margin: 20px auto;
+  }
+  .description {
+    text-align: center;
+    color: #180a18;
+    font-family: 'PFDinDisplayPro-Regular', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0 0 90px;
+  }
+  .single-item {
+    width: 90%;
+    margin: 0 auto;
+    @media (min-width: 961px) and (max-width: 1366px) {
+      width: 100%;
+    }
+    @media (min-width: 426px) and (max-width: 568px) {
+      width: 80%;
+    }
+    .slick-arrow {
+      position: absolute;
+      top: 33%;
+      border: none;
+      width: 25px;
+      height: 46px;
+      @media (min-width: 320px) and (max-width: 480px) {
+        top: 80%;
+      }
+    }
+    .slick-prev {
+      left: -65px;
+      background: url("../img/reviews/arrows-prev-default.png") no-repeat 100% 100%;
+      -webkit-background-size: cover;
+      background-size: cover;
+      -webkit-transition: .3s;
+      -o-transition: .3s;
+      transition: .3s;
+      @media (min-width: 320px) and (max-width: 568px) {
+        left: -45px;
+      }
+      @media (min-width: 320px) and (max-width: 480px) {
+        left: 10px;
+      }
+      &:hover {
+        background: url("../img/reviews/arrows-prev-active.png") no-repeat 100% 100%;
+        -webkit-background-size: cover;
+        background-size: cover;
+      }
+    }
+    .slick-next {
+      right: -65px;
+      background: url("../img/reviews/arrows-next-default.png") no-repeat 100% 100%;
+      -webkit-background-size: cover;
+      background-size: cover;
+      -webkit-transition: .3s;
+      -o-transition: .3s;
+      transition: .3s;
+      @media (min-width: 320px) and (max-width: 568px) {
+        right: -45px;
+      }
+      @media (min-width: 320px) and (max-width: 480px) {
+        right: 10px;
+      }
+      &:hover {
+        background: url("../img/reviews/arrows-next-active.png") no-repeat 100% 100%;
+        -webkit-background-size: cover;
+        background-size: cover;
+      }
+    }
+    .slick-dots {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      margin: 65px 0 0;
+      @media (min-width: 320px) and (max-width: 480px) {
+        margin: 100px 0 0;
+      }
+      li {
+        cursor: pointer;
+        width: 10px;
+        height: 9px;
+        background: url("../img/reviews/dot.png") no-repeat 100% 100%;
+        -webkit-background-size: contain;
+        background-size: contain;
+        margin: 0 6px;
+        button {
+          display: none;
+        }
+      }
+      .slick-active {
+        background: url("../img/reviews/dot-active.png") no-repeat 100% 100%;
+        -webkit-background-size: contain;
+        background-size: contain;
+      }
+    }
+  }
+  .card {
+    width: 48%;
+    padding: 10px 30px 10px 10px;
+    border-right: 3px solid #f4f4f4;
+    &:nth-child(2n) {
+      border-right: 3px solid transparent;
+      padding: 10px 10px 10px 30px;
+      @media (min-width: 320px) and (max-width: 960px) {
+        width: 100%;
+        padding: 10px;
+        border: none;
+      }
+    }
+    @media (min-width: 320px) and (max-width: 960px) {
+      width: 100%;
+      padding: 10px;
+      border: none;
+    }
+  }
+  .person-ct {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 0 38px;
+    @media (min-width: 320px) and (max-width: 960px) {
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+    }
+    .img-ct {
+      margin: 0 10px 0 0;
+      position: relative;
+      .face {
+        margin: 5px 0 0;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        border: 2px solid #e4e4e4;
+      }
+      .quotes {
+        position: absolute;
+        top: 0;
+        right: -5px;
+        height: 19px;
+        width: 19px;
+      }
+    }
+    .text-ct {
+      -webkit-align-self: center;
+      -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+      .name {
+        color: #000000;
+        font-family: 'PFDinDisplayPro-Regular', sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+        //margin: 0 0 8px;
+      }
+      .profession {
+        color: #787878;
+        font-family: 'SegoeUI-Light', sans-serif;
+        font-size: 14px;
+        font-weight: 300;
+      }
+    }
+  }
+  .stars-ct {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 0 25px;
+    @media (min-width: 320px) and (max-width: 960px) {
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+    }
+    img {
+      width: 14px;
+      height: 13px;
+      margin: 0 1px;
+    }
+    .rating {
+      margin: 0 0 0 10px;
+      color: #a5a5a5;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 12px;
+      font-weight: 400;
+      letter-spacing: 0.29px;
+    }
+  }
+  .content {
+    p {
+      color: #787878;
+      font-family: 'SegoeUI-Light', sans-serif;
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 20px;
+      @media (min-width: 320px) and (max-width: 768px) {
+        text-align: justify;
+      }
+    }
+  }
+}

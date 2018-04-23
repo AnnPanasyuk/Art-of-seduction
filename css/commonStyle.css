@@ -1,0 +1,8 @@
+.container {
+  width: 1236px;
+  margin: 0 auto; }
+  @media (min-width: 320px) and (max-width: 1919px) {
+    .container {
+      width: 85%; } }
+
+/*# sourceMappingURL=commonStyle.css.map */

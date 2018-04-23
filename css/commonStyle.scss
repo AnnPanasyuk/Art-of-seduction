@@ -1,0 +1,114 @@
+.container {
+  width: 1236px;
+  margin: 0 auto;
+  @media (min-width: 320px) and (max-width: 1919px) {
+    width: 64%;
+  }
+  @media (min-width: 320px) and (max-width: 1366px) {
+    width: 78%;
+  }
+  @media (min-width: 320px) and (max-width: 960px) {
+    width: 85%;
+  }
+}
+a {
+  text-decoration: none;
+}
+a, button {
+  cursor: pointer;
+}
+* {
+  &:hover, &:active, &:focus {
+    outline: none;
+  }
+}
+%link {
+  display: inline-block;
+  padding: 20px 0;
+  background: url("../img/top-content/btn.png") no-repeat 100% 100%;
+  -webkit-background-size: contain;
+  background-size: contain;
+  -webkit-transform: scale(1,1);
+  -webkit-transition-timing-function: ease-out;
+  -webkit-transition-duration: 550ms;
+  -moz-transform: scale(1,1);
+  -moz-transition-timing-function: ease-out;
+  -moz-transition-duration: 550ms;
+  span {
+    padding: 0 73px;
+    color: #ffffff;
+    font-family: 'PFDinDisplayPro-Regular', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    -webkit-transform: scale(1,1);
+    -webkit-transition-timing-function: ease-out;
+    -webkit-transition-duration: 550ms;
+    -moz-transform: scale(1,1);
+    -moz-transition-timing-function: ease-out;
+    -moz-transition-duration: 550ms;
+  }
+  &:hover {
+    -webkit-transform: scale(1.05,1.05);
+    -webkit-transition-timing-function: ease-out;
+    -webkit-transition-duration: 550ms;
+    -moz-transform: scale(1.05,1.05);
+    -moz-transition-timing-function: ease-out;
+    -moz-transition-duration: 550ms;
+    span {
+      -webkit-transform: scale(1.1,1.1);
+      -webkit-transition-timing-function: ease-out;
+      -webkit-transition-duration: 550ms;
+      -moz-transform: scale(1.1,1.1);
+      -moz-transition-timing-function: ease-out;
+      -moz-transition-duration: 550ms;
+    }
+  }
+}
+%info {
+  width: 50%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  img {
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+    margin: 0 15px 0 0;
+  }
+  p {
+    line-height: 1;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+    font-size: 28px;
+    color: #ffffff;
+    font-family: 'PFDinDisplayPro-Light', sans-serif;
+    @media (min-width: 320px) and (max-width: 480px) {
+      font-size: 18px;
+    }
+    sup {
+      font-size: 13px;
+      @media (min-width: 320px) and (max-width: 480px) {
+        font-size: 11px;
+      }
+    }
+  }
+  hr {
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+    margin: 0 15px;
+    width: 23px;
+    height: 1px;
+    border: none;
+    color: #ffffff;
+    background-color: #ffffff;
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+}
